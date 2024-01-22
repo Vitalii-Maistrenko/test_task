@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container __container">
+          <div class="search-container">
+            <span class="search-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_8)">
+                  <path
+                    d="M11.4286 11.4286L8.86519 8.86061M10.2858 5.42861C10.2858 6.71681 9.77403 7.95224 8.86314 8.86313C7.95224 9.77402 6.71681 10.2858 5.42862 10.2858C4.14042 10.2858 2.90499 9.77402 1.9941 8.86313C1.08321 7.95224 0.571472 6.71681 0.571472 5.42861C0.571472 4.14042 1.08321 2.90499 1.9941 1.9941C2.90499 1.08321 4.14042 0.571472 5.42862 0.571472C6.71681 0.571472 7.95224 1.08321 8.86314 1.9941C9.77403 2.90499 10.2858 4.14042 10.2858 5.42861Z"
+                    stroke="#737476"
+                    stroke-linecap="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1_8">
+                    <rect width="12" height="12" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <input
+              class="header__input"
+              placeholder="Search instrument..."
+              type="text"
+            />
+            <span class="clear-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="8"
+                viewBox="0 0 8 8"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_1_13)">
+                  <path
+                    d="M6.57844 6.57853L1.42142 1.42151M6.57844 1.42151L1.42142 6.57853"
+                    stroke="#737476"
+                    stroke-linecap="round"
+                  />
+                </g>
+              </svg>
+            </span>
+          </div>
+          <div class="styled-container">
+            <p class="styled-text">USD</p>
+            <p class="strong-text">120.18</p>
+            <div class="vertical-line"></div>
+            <div class="arrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="7"
+                height="12"
+                viewBox="0 0 7 12"
+                fill="none"
+              >
+                <path
+                  d="M3.50006 1.67999V10.32M1.63339 3.59999L3.50006 1.67999L1.63339 3.59999ZM3.50006 1.67999L5.36673 3.59999L3.50006 1.67999Z"
+                  stroke="#14CE8B"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="additional-text">3.29%</div>
+          </div>
+        </div>
+        <div class="header__additional-block">
+          <p class="styled-text-stat">Day Range</p>
+          <div class="statContainer">
+            <p class="strong-text-Numbers">227.13 - 233.37</p>
+            <img class="image-stat" src="./svg/statistic1.svg" alt="#" />
+          </div>
+          <div class="vertical-line-box"></div>
+          <p class="styled-text-stat">52 Week Range</p>
+          <div class="statContainer">
+            <p class="strong-text-Numbers">127.13 - 233.37</p>
+            <img class="image-stat" src="./svg/statistic2.svg" alt="#" />
+          </div>
+          <div class="vertical-line-box"></div>
+          <p class="styled-text-stat">Market Cap</p>
+          <div class="statContainer">
+            <p class="text-box2">2.04T USD</p>
+          </div>
+          <div class="vertical-line-box"></div>
+          <p class="styled-text-stat">Market Cap</p>
+          <div class="statContainer">
+            <p class="text-box2">1.25</p>
+          </div>
+        </div>
+        <div class="container_button_header">
+          <button onclick="showContent('general')" class="color-bottun">
+            General
+          </button>
+          <button onclick="showContent('profile')" class="normal-buton">
+            Profile
+          </button>
+          <button onclick="showContent('statistics')" class="normal-buton">
+            Statistics
+          </button>
+        </div>
+        <div class="line"></div>
+        <div
+          id="generalContent"
+          class="content text-container"
+          style="display: block"
+        >
+          <p>
+            Apple Inc. designs, manufactures, and markets smartphones, personal
+            computers, tablets, wearables, and accessories worldwide. It also
+            sells various related services. The company offers iPhone, a line of
+            smartphones; Mac, a line of personal computers; iPad, a line of
+            multi-purpose tablets; and wearables, home, and accessories...
+          </p>
+        </div>
+        <div
+          id="profileContent"
+          class="content text-container"
+          style="display: none"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque unde
+          vero voluptate quisquam quas sed animi ipsam, laboriosam asperiores
+          nam quibusdam dignissimos alias, quis quos reprehenderit possimus odit
+          molestias obcaecati.
+        </div>
+        <div
+          id="statisticsContent"
+          class="content text-container"
+          style="display: none"
+        >
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+          molestias qui dolor quasi odio porro tenetur distinctio consectetur
+          nostrum, sequi accusantium illo! Ab perspiciatis, fuga explicabo
+          facere voluptate magni minus!
+        </div>
+        <div
+          id="additionalContent"
+          class="text-container content"
+          style="display: none"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut
+          assumenda deserunt, consequuntur doloremque, nihil mollitia officia
+          beatae facilis laudantium ad ipsum. Eos facere, quae velit libero
+          magni alias commodi accusantium.
+        </div>
+        <button
+          id="showMoreButton"
+          class="container_button_header color-bottungren"
+        >
+          Show More
+        </button>
+        <div class="line"></div>
+      </header>
+      <main class="main">
+        <div class="grafick-block">
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="speedometer-block">
+          <p class="spead-text">ANALYSTS RECOMMENDATIONS</p>
+          <div class="spead-test">
+            <img class="cap" src="./svg/kap.svg" alt="" />
+            <canvas class="canwas" id="speedometerChart"></canvas>
+            <div class="arrow-container">
+              <div class="svg-pungter">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="52"
+                  viewBox="0 0 48 52"
+                  fill="none"
+                >
+                  <path
+                    d="M0.999628 51L46.9995 0.999937"
+                    stroke="#C4C4C4"
+                    stroke-opacity="0.2"
+                    stroke-dasharray="5 5"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <p class="buy">buy</p>
+          <div class="grafick-block-text">
+            <div class="decoration-block">
+              <div class="decoration1"></div>
+              <div class="decoration2"></div>
+              <div class="decoration3"></div>
+              <div class="decoration4"></div>
+              <div class="decoration5"></div>
+            </div>
+            <div class="text-block">
+              <p>Strong Buy</p>
+              <p>Buy</p>
+              <p>Hold</p>
+              <p>Sell</p>
+              <p>Strong Sell</p>
+            </div>
+          </div>
+          <div class="line-grafick"></div>
+          <p class="spead-text">Number of analysts</p>
+          <div class="analysts-block">
+            <img class="analysts-block-image" src="./svg/analist1.svg" alt="" />
+            <img class="analysts-block-image" src="./svg/analist2.svg" alt="" />
+            <img class="analysts-block-image" src="./svg/analist3.svg" alt="" />
+            <img class="analysts-block-image" src="./svg/analist4.svg" alt="" />
+            <img class="analysts-block-image" src="./svg/analist5.svg" alt="" />
+            <img class="analysts-block-image" src="./svg/analist6.svg" alt="" />
+          </div>
+          <div class="analysts-block-text">
+            <p>Jul 20</p>
+            <p>Aug 20</p>
+            <p>Sep 20</p>
+            <p>Oct 20</p>
+            <p>Nov 20</p>
+            <p>Dec 20</p>
+          </div>
+        </div>
+        <div class="informaishon-block">
+          <div class="information-container">
+            <div class="infotmation-text">
+              <h1>General Information</h1>
+              <div class="text-information-container-dark">
+                <p>Type</p>
+                <p class="text-information-container-w">Common Stock</p>
+              </div>
+              <div class="text-information-container-white">
+                <p>Exchange</p>
+                <p class="text-information-container-w">NASDAQ</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pers-analistic">
+          <div class="pers-analistic-container">
+            <h1 class="pers-analistic-container-head">PEERS ANALYSIS</h1>
+            <div class="line-analistic"></div>
+            <div class="pers-analistic-bar">
+              <p class="bar-analistic-start">Name</p>
+              <p class="bar-analistic-main">Price</p>
+              <p class="bar-analistic-and">Daily Change%</p>
+            </div>
+            <div class="line-analistic"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">AAPL</p>
+              <p class="analistic-text-b">Apple Inc</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">CAJ</p>
+              <p class="analistic-text-b">Canon Inc</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">DELL</p>
+              <p class="analistic-text-b">Dell Technologi...</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d-red">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">HPQ</p>
+              <p class="analistic-text-b">HP Inc</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">HPE</p>
+              <p class="analistic-text-b">Dell Technologi...</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d-red">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">LOGI</p>
+              <p class="analistic-text-b">Dell Technologi...</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">STX</p>
+              <p class="analistic-text-b">Apple Inc</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+            <div class="pers-analistic-text">
+              <p class="analistic-text-a">WDC</p>
+              <p class="analistic-text-b">Canon Inc</p>
+              <p class="analistic-text-c">120.03</p>
+              <p class="analistic-text-d">0.04%</p>
+            </div>
+            <div class="line-analist"></div>
+          </div>
+        </div>
+        <div class="prisetarget">
+          <div class="line-container">
+            <div class="text-container-pris">
+              <p class="praice-text">PRICE TARGET</p>
+              <img class="piu" src="./svg/piu.svg" alt="" />
+              <p class="praice-text-value">Current 120.20</p>
+            </div>
+            <img src="./svg/Знімок екрана 2024-01-22 о 19.24.28.png" alt="" />
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
